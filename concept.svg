@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="Arial, sans-serif">
+  <defs>
+    <radialGradient id="vision" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="exit" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffe9a8" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="#0b0b0d"/>
+  <!-- Tunnels (top view) -->
+  <g fill="#3a3328">
+    <rect x="60" y="200" width="520" height="56"/>
+    <rect x="300" y="60" width="56" height="330"/>
+    <rect x="520" y="90" width="56" height="166"/>
+    <rect x="520" y="90" width="210" height="50"/>
+  </g>
+  <!-- Cell -->
+  <rect x="60" y="190" width="90" height="76" fill="none" stroke="#6b6355" stroke-width="4"/>
+  <text x="70" y="182" fill="#6b6355" font-size="12">cell</text>
+  <!-- Guard + flashlight cone -->
+  <path d="M328 300 L270 390 L386 390 Z" fill="#f6e7a0" opacity="0.25"/>
+  <circle cx="328" cy="300" r="12" fill="#b03a2e"/>
+  <text x="346" y="305" fill="#b03a2e" font-size="12">guard</text>
+  <!-- Player with small vision circle -->
+  <circle cx="235" cy="228" r="70" fill="url(#vision)" opacity="0"/>
+  <circle cx="235" cy="228" r="11" fill="#7fb3d5"/>
+  <circle cx="235" cy="228" r="60" fill="none" stroke="#7fb3d5" stroke-opacity="0.35" stroke-dasharray="4 5"/>
+  <!-- Sound ripples -->
+  <g fill="none" stroke="#c9c2b0" stroke-opacity="0.5">
+    <circle cx="328" cy="300" r="26"/><circle cx="328" cy="300" r="42" stroke-opacity="0.3"/>
+  </g>
+  <!-- Exit light -->
+  <circle cx="725" cy="115" r="60" fill="url(#exit)"/>
+  <text x="680" y="70" fill="#ffe9a8" font-size="13">exit shaft</text>
+  <!-- Supply crate -->
+  <rect x="540" y="215" width="22" height="22" fill="#4e7a52"/>
+  <text x="566" y="232" fill="#8fbf94" font-size="11">water</text>
+  <!-- HUD -->
+  <g transform="translate(20,20)" font-size="13" fill="#ddd">
+    <text y="0">Water</text><rect x="70" y="-11" width="120" height="10" rx="4" fill="#222"/><rect x="70" y="-11" width="60" height="10" rx="4" fill="#5dade2"/>
+    <text y="22">Strength</text><rect x="70" y="11" width="120" height="10" rx="4" fill="#222"/><rect x="70" y="11" width="85" height="10" rx="4" fill="#58d68d"/>
+    <text y="44">Hope</text><rect x="70" y="33" width="120" height="10" rx="4" fill="#222"/><rect x="70" y="33" width="100" height="10" rx="4" fill="#f4d03f"/>
+  </g>
+  <!-- Hand-drawn map panel -->
+  <g transform="translate(600,290)">
+    <rect width="180" height="140" rx="8" fill="#e8dcc0"/>
+    <text x="10" y="20" fill="#4a3b26" font-size="12">My map (M)</text>
+    <path d="M20 90 H120 M70 40 V125 M120 90 V55 H160" stroke="#4a3b26" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <text x="128" y="50" fill="#4a3b26" font-size="11">?</text>
+  </g>
+  <text x="20" y="430" fill="#888" font-size="12">Shift - listen · WASD - move · M - map</text>
+</svg>

@@ -22,6 +22,10 @@
 
 [הרכיבים הרשמיים של המשחק וסקירת משחקים קיימים](formal-elements.md)
 
+## סקר שוק
+
+[סקר השוק של המשחק](Market_Research.md)
+
 ## חברי הצוות
 
 * דוד בלוך ([davidbloch18](https://github.com/davidbloch18))
